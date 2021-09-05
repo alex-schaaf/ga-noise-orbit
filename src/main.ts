@@ -34,7 +34,7 @@ const sketch = (p: p5) => {
     let c = 0
 
     for (let r = 0.1; r < 0.7; r += 0.01) {
-      p.stroke(c % 360, 60, 100)
+      p.stroke(0, 0, 100)
       const circle = makeCircle(20, r)
       const distortedCircle = distortPolygon(p, circle)
       const smoothCircle = chaikin(distortedCircle, 2)
